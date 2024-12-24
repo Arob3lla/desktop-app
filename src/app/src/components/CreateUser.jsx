@@ -19,7 +19,7 @@ const CreateUser = () => {
     setFormData({ ...formData, [name]: value });
   };
   return (
-    <div className="max-w-4xl mx-auto mt-16 p-6 bg-slate-600 shadow-lg rounded-xl">
+    <div className="relative max-w-6xl mx-auto mt-6 p-7 px-10 bg-black shadow-lg rounded-xl z-10">
       <h2 className="text-3xl font-bold text-white mb-6">Add Tenant ...</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -33,7 +33,7 @@ const CreateUser = () => {
             name="name"
             onChange={handleChange}
             value={formData.name}
-            className="input input-bordered w-full max-w-4xl rounded-full"
+            className="input input-bordered w-full max-w-6xl rounded-full bg-gray-300"
             required
           />{" "}
           <label className="block p-2 text-white font-medium " htmlFor="phone">
@@ -46,7 +46,7 @@ const CreateUser = () => {
             name="cnic"
             onChange={handleChange}
             value={formData.cnic}
-            className="input input-bordered w-full max-w-4xl rounded-full"
+            className="input input-bordered w-full max-w-6xl rounded-full bg-gray-300"
             required
           />{" "}
           <label className="block p-2 text-white font-medium " htmlFor="phone">
@@ -59,7 +59,7 @@ const CreateUser = () => {
             name="phone_no"
             onChange={handleChange}
             value={formData.phone_no}
-            className="input input-bordered w-full max-w-4xl rounded-full"
+            className="input input-bordered w-full max-w-6xl rounded-full bg-gray-300"
             required
           />{" "}
           <label
@@ -75,7 +75,7 @@ const CreateUser = () => {
             name="plate_no"
             onChange={handleChange}
             value={formData.plate_no}
-            className="input input-bordered w-full max-w-4xl rounded-full"
+            className="input input-bordered w-full max-w-6xl rounded-full bg-gray-300"
             required
           />{" "}
           <label
@@ -91,7 +91,7 @@ const CreateUser = () => {
             name="address"
             onChange={handleChange}
             value={formData.address}
-            className="input input-bordered w-full max-w-4xl rounded-full"
+            className="input input-bordered w-full max-w-6xl rounded-full bg-gray-300"
             required
           />{" "}
           <label className="block p-2 text-white font-medium " htmlFor="number">
@@ -104,13 +104,13 @@ const CreateUser = () => {
             name="payment"
             onChange={handleChange}
             value={formData.payment}
-            className="input input-bordered w-full max-w-4xl rounded-full"
+            className="input input-bordered w-full max-w-6xl rounded-full bg-gray-300"
             required
           />{" "}
         </div>
         <div className="flex justify-center">
           {" "}
-          <button className="btn rounded-full" onClick={handleSubmit}>
+          <button className="btn px-20 rounded-full" onClick={handleSubmit}>
             SAVE
           </button>
         </div>

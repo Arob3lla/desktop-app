@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-200 overflow-hidden;
+}
+
+.sharp-gradient {
+  background: linear-gradient(to bottom right, #e5e7eb 70%, black 30%);
+}
+
+.clip-diagonal {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
